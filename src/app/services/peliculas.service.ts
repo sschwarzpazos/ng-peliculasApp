@@ -11,4 +11,12 @@ export class PeliculasService {
 
   }
 
+  getPopulares(){
+
+    let url = `${ this.urlMoviedb }/discover/movie?sort_by=popularity.desc&api_key=${ this.apikey }&language=es&callback=JSONP_CALLBACK`;
+
+    return this.jsonp.get( url )
+                .map( res=> res.json());
+  }
+
 }
