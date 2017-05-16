@@ -23,6 +23,7 @@
         "styles.css"
       ],
       "scripts": [
+        "assets/tether/tether.js",
         "assets/b4/js/bootstrap.min.js"
       ],
       "environmentSource": "environments/environment.ts",
