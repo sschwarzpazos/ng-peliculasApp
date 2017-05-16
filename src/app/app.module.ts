@@ -1,10 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpModule, JsonpModule } from '@angular/http';
 
 //import Routes
 import { APP_ROUTING } from './app.routes';
+
+//import services
+import { PeliculasService } from './services/peliculas.service';
 
 // import components
 import { AppComponent } from './app.component';
@@ -25,9 +28,12 @@ import { BuscarComponent } from './components/buscar/buscar.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    APP_ROUTING
+    APP_ROUTING,
+    JsonpModule
   ],
-  providers: [],
+  providers: [
+    PeliculasService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
