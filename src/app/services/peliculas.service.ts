@@ -4,6 +4,7 @@ import 'rxjs/Rx'; // Map
 
 @Injectable()
 export class PeliculasService {
+  private apikey:string = "";
 
   constructor() { }
 
