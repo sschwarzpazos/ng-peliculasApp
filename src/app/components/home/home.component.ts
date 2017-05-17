@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
 
   cartelera:any;
   populares:any;
+  popularesNinhos:any;
 
   constructor( private peliculasService:PeliculasService) {
     this.peliculasService
@@ -19,6 +20,10 @@ export class HomeComponent implements OnInit {
     this.peliculasService
       .getPopulares()
       .subscribe( data => this.populares = data );
+
+    this.peliculasService
+      .getPopularesNinhos()
+      .subscribe( data => this.popularesNinhos = data );
   }
 
   ngOnInit() {
