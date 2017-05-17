@@ -6,6 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styles: []
 })
 export class GaleriaComponent implements OnInit {
+  @Input('peliculas') peliculas; // peliculas es un alias
 
   constructor() { }
 
