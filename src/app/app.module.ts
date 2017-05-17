@@ -18,16 +18,18 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PeliculaComponent } from './components/pelicula/pelicula.component';
 import { BuscarComponent } from './components/buscar/buscar.component';
+import { GaleriaComponent } from './components/home/galeria.component';
 
 
 @NgModule({
   declarations: [
+    PeliculaImagenPipe,
     AppComponent,
     HomeComponent,
     NavbarComponent,
     PeliculaComponent,
     BuscarComponent,
-    PeliculaImagenPipe
+    GaleriaComponent
   ],
   imports: [
     BrowserModule,
