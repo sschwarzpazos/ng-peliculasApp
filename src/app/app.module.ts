@@ -5,6 +5,10 @@ import { HttpModule, JsonpModule } from '@angular/http';
 
 //import services
 import { PeliculasService } from './services/peliculas.service';
+
+//import Routes
+import { APP_ROUTING } from './app.routes';
+
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -15,7 +19,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    JsonpModule
+    JsonpModule,
+    APP_ROUTING
   ],
   providers: [
     PeliculasService
