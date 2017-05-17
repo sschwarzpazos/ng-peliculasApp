@@ -9,11 +9,16 @@ import { PeliculasService } from '../../services/peliculas.service';
 export class HomeComponent implements OnInit {
 
   cartelera:any;
+  populares:any;
 
   constructor( private peliculasService:PeliculasService) {
     this.peliculasService
       .getCartelera()
       .subscribe( data => this.cartelera = data );
+
+    this.peliculasService
+      .getPopulares()
+      .subscribe( data => this.populares = data );
   }
 
   ngOnInit() {
