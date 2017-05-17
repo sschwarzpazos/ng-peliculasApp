@@ -9,11 +9,20 @@ import { PeliculasService } from './services/peliculas.service';
 //import Routes
 import { APP_ROUTING } from './app.routes';
 
+// import components
 import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { PeliculaComponent } from './components/pelicula/pelicula.component';
+import { BuscarComponent } from './components/buscar/buscar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    NavbarComponent,
+    PeliculaComponent,
+    BuscarComponent
   ],
   imports: [
     BrowserModule,
