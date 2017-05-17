@@ -11,7 +11,7 @@
   <h3>Cartelera</h3>
   <hr>
 
-  <app-galeria [peliculas]="cartelera">
+  <app-galeria [peliculas]="cartelera | slice:0:6">
   </app-galeria>
 
 </div> <!--// end. container -->
