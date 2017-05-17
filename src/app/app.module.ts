@@ -15,10 +15,10 @@ import { PeliculaImagenPipe } from './pipes/pelicula-imagen.pipe';
 // import components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { GaleriaComponent } from './components/home/galeria.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PeliculaComponent } from './components/pelicula/pelicula.component';
 import { BuscarComponent } from './components/buscar/buscar.component';
-
 
 @NgModule({
   declarations: [
@@ -27,6 +27,7 @@ import { BuscarComponent } from './components/buscar/buscar.component';
     NavbarComponent,
     PeliculaComponent,
     BuscarComponent,
+    GaleriaComponent,
     PeliculaImagenPipe
   ],
   imports: [
