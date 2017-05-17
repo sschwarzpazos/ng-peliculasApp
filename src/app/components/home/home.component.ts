@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PeliculasService } from '../../services/peliculas.service';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   cartelera:any;
-  
-  constructor() { }
+
+  constructor( private peliculasService:PeliculasService) {
+    this.peliculasService
+      .getCartelera()
+      .subscribe( data => this.cartelera = data );
+  }
 
   ngOnInit() {
   }
