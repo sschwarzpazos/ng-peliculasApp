@@ -6,6 +6,7 @@
         <input
           [(ngModel)]="buscar"
           name="buscar"
+          (keyup.enter)="buscarPelicula()"
           type="text"
           placeholder="Buscar una película">
       </div>

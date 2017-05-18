@@ -12,4 +12,8 @@ export class BuscarComponent implements OnInit {
   ngOnInit() {
   }
 
+  buscarPelicula() {
+    
+  }
+
 }
