@@ -30,13 +30,6 @@ export class PeliculasService {
 
   getPopularesNinhos() {
 
-    let desde:Date = new Date();
-    let hasta:Date = new Date();
-    hasta.setDate( hasta.getDate() + 7);
-
-    let desdeStr:string = `${ desde.getFullYear() }-${ desde.getMonth() + 1 }-${ desde.getDate() }`;
-    let hastaStr:string = `${ hasta.getFullYear() }-${ hasta.getMonth() + 1 }-${ hasta.getDate() }`;
-
     let url = `${ this.urlMoviedb }/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&api_key=${ this.apikey }&language=es&callback=JSONP_CALLBACK`;
 
     return this.jsonp.get( url )
@@ -62,5 +55,7 @@ export class PeliculasService {
                   return this.peliculas;
                 } );
   }
+
+
 
 }
