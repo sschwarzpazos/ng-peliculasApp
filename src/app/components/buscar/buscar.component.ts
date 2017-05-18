@@ -16,7 +16,9 @@ export class BuscarComponent implements OnInit {
   }
 
   buscarPelicula() {
+    if (this.buscar.length === 0) return;
 
+    
   }
 
 }
