@@ -9,13 +9,20 @@ import { PeliculasService } from '../../services/peliculas.service';
 })
 export class PeliculaComponent implements OnInit {
 
+  private pelicula:any;
+
   constructor(
     private ps:PeliculasService,
     private route:ActivatedRoute
   ) {
     this.route.params.subscribe(
       params => {
-        console.log( params )
+        console.log( params[ 'id' ] );
+        this.ps
+          .getPelicula( params[ 'id' ] )
+          .subscribe( _pelicula => {
+            this.pelicula = _pelicula;
+          } );
       }
     );
   }
