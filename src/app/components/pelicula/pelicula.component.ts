@@ -18,6 +18,7 @@ export class PeliculaComponent implements OnInit {
   ) {
     this.route.params.subscribe(
       params => {
+        this.regresarA = params[ 'pag' ];
         this.ps
           .getPelicula( params[ 'id' ] )
           .subscribe( _pelicula => {
