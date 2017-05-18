@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuscarComponent implements OnInit {
 
+  buscar:string = "";
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  buscarPelicula() {
+
   }
 
 }
