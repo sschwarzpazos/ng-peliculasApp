@@ -17,7 +17,6 @@ export class PeliculaComponent implements OnInit {
   ) {
     this.route.params.subscribe(
       params => {
-        console.log( params[ 'id' ] );
         this.ps
           .getPelicula( params[ 'id' ] )
           .subscribe( _pelicula => {
