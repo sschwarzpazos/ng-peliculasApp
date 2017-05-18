@@ -10,6 +10,7 @@ import { PeliculasService } from '../../services/peliculas.service';
 export class PeliculaComponent implements OnInit {
 
   private pelicula:any;
+  private regresarA:string = "";
 
   constructor(
     private ps:PeliculasService,
