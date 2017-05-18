@@ -11,7 +11,7 @@ export class PeliculaComponent implements OnInit {
 
   private pelicula:any;
   private regresarA:string = "";
-
+  private busqueda:string = "";
   constructor(
     private ps:PeliculasService,
     private route:ActivatedRoute
