@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PeliculasService } from '../../services/peliculas.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-buscar',
@@ -10,7 +11,10 @@ export class BuscarComponent implements OnInit {
 
   buscar:string = "";
 
-  constructor(private ps:PeliculasService) { }
+  constructor(
+    private ps:PeliculasService,
+    private router:ActivatedRoute
+  ) { }
 
   ngOnInit() {
   }
