@@ -26,7 +26,7 @@
           <h4 class="card-title"> {{ pelicula.original_title }} </h4>
           <p class="card-text text-justify"> {{ pelicula.overview | slice:0:250 }} ... </p>
           <button
-            [routerLink]="['/pelicula', pelicula.id, 'buscar']"
+            [routerLink]="['/pelicula', pelicula.id, 'buscar', buscar]"
             type="button"
             class="btn btn-outline-primary btn-block">
               Ver más ...
