@@ -14,7 +14,15 @@ export class BuscarComponent implements OnInit {
   constructor(
     private ps:PeliculasService,
     private router:ActivatedRoute
-  ) { }
+  ) {
+    this.router.params
+      .subscribe( params => {
+        if ( params[ 'texto' ] ) {
+          this.buscar = params[ 'texto' ];
+          this.buscarPelicula();
+        }
+      } );
+  }
 
   ngOnInit() {
   }
