@@ -11,4 +11,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
+  buscarPelicula( texto:string ) {
+    console.log( texto );
+  }
 }
