@@ -6,12 +6,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }
 
   buscarPelicula( texto:string ) {
     console.log( texto );
+    if ( texto.length === 0 ) return;
+
   }
 }
