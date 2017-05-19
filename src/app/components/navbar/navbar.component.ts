@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor( private router:Router ) { 
+  constructor( private router:Router ) {
 
   }
 
@@ -18,6 +18,6 @@ export class NavbarComponent implements OnInit {
     console.log( texto );
     if ( texto.length === 0 ) return;
 
-
+    this.router.navigate( [ 'buscar', texto ] );
   }
 }
