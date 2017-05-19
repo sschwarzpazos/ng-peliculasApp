@@ -13,5 +13,8 @@ export class NavbarComponent implements OnInit {
 
   buscarPelicula( texto:string ) {
     console.log( texto );
+    if ( texto.length === 0 ) return;
+
+    
   }
 }
